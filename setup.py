@@ -4,7 +4,9 @@ from setuptools import setup
 current_dir = os.path.abspath(os.path.dirname(__file__))
 
 requires = [
-    'pyyaml'
+    'pyyaml',
+    'autopep8',
+    'docopt'
 ]
 
 test_requirements = [
