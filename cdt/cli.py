@@ -16,5 +16,7 @@ def main():
     if command in commands:
         module = import_module('cdt.{}'.format(command))
         module.main(args)
+    elif command == 'help':
+        exit('Available cdt commands: {}'.format(', '.join(commands)))
     else:
-        exit('{} is not a cdt command. See "cdt help".'.format(command))
+        exit('"{}" is not a cdt command. See "cdt help".'.format(command))
