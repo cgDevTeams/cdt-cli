@@ -1,0 +1,11 @@
+# Ignore uqnique caches
+cdt_cli.*
+
+# Ignore Python cache files
+__pycache__
+*.pyc
+.pytest_cache
+
+# Ignore Dev Directory
+.venv
+.vscode
