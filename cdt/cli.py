@@ -1,6 +1,5 @@
 import os
 import sys
-import glob
 from importlib import import_module
 
 commands = [
