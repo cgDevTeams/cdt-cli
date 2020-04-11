@@ -14,6 +14,7 @@ from pprint import pprint
 
 from . import config
 
+
 def main():
     args = docopt(__doc__)
 

@@ -19,7 +19,6 @@ class Config(object):
         else:
             self.load_config()
 
-
     def create_config_path(self):
         """
         Create user config path
@@ -43,7 +42,6 @@ class Config(object):
 
         return config_path
 
-
     def _create_initial_config(self):
         """
         If config file doesn't exist, this will be called after checking.
@@ -55,11 +53,9 @@ class Config(object):
 
         self.save_config(data)
 
-
     def load_config(self):
         with open(self.config_path, 'r', encoding='utf-8') as cf:
             self.data = yaml.safe_load(cf)
-
 
     def save_config(self, data):
         with open(self.config_path, 'w', encoding='utf-8') as cf:
